@@ -2,10 +2,11 @@ require_relative './dance_module.rb'
 require_relative './class_methods_module.rb'
 require_relative './fancy_dance.rb'
 
-#class Kid
+class Kid
+
+  extend FancyDance::ClassMethods
+  include FancyDance::InstanceMethods
   
-  #include FancyDance: :InstanceMethods
-  #extend FancyDance: :ClassMethods
   
   #attr_accessor :name
   
@@ -13,11 +14,11 @@ require_relative './fancy_dance.rb'
    # @name = name
   #end
   
-  include Dance
-  extend MetaDancing
-  attr_accessor :name
+  #include Dance
+  #extend MetaDancing
+  #attr_accessor :name
 
-  def initialize(name)
-    @name = name
-  end
+  #def initialize(name)
+    #@name = name
+  #end
 end
