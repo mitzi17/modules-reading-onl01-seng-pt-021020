@@ -18,7 +18,7 @@ class Kid
   #extend MetaDancing
   #attr_accessor :name
 
-  #def initialize(name)
-    #@name = name
-  #end
+  def initialize(name)
+    @name = name
+  end
 end
